@@ -68,7 +68,7 @@ namespace AppiumTest
                 welcomeScreenFixture.ClickSignIn();
                 signinFixture.WaitForDisplay();
 
-                signinFixture.SignIn("", "");
+                signinFixture.SignIn(Credentials.Username, Credentials.Password);
             }
         }
     }
