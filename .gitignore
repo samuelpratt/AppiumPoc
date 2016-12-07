@@ -1,3 +1,5 @@
 *.Credentials
 AppiumTest/bin/*
 AppiumTest/obj/*
+packages/*
+.vs/*

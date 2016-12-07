@@ -9,7 +9,7 @@ namespace AppiumTest.Fixtures
         private static readonly string SignInString = "Sign in";
         private static readonly string EmailString = "Email";
 
-        public SignInViewFixture(AndroidDriver<AndroidElement> driver) : base(driver, new List<By> { By.Name(EmailString), By.Name(SignInString) })
+        public SignInViewFixture(DriverWrapper driver) : base(driver, new List<By> { By.Name(EmailString), By.Name(SignInString) })
         { }
 
         public void SignIn(string email, string password)

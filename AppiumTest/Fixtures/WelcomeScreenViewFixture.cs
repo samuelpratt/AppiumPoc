@@ -9,7 +9,7 @@ namespace AppiumTest.Fixtures
         private static readonly string SignInString = "Sign in";
         private static readonly string RegisterString = "Create an account";
 
-        public WelcomeScreenViewFixture(AndroidDriver<AndroidElement> driver) : base(driver, new List<By> { By.Name(SignInString), By.Name(RegisterString) } )
+        public WelcomeScreenViewFixture(DriverWrapper driver) : base(driver, new List<By> { By.Name(SignInString), By.Name(RegisterString) } )
         {
         }
 

@@ -7,10 +7,10 @@ namespace AppiumTest.Fixtures
 {
     abstract class AbstractViewFixture
     {
-        protected readonly AndroidDriver<AndroidElement> Driver;
+        protected readonly DriverWrapper Driver;
         private readonly List<By> _viewSelectors;
 
-        protected AbstractViewFixture(AndroidDriver<AndroidElement> driver, List<By> viewSelectors)
+        protected AbstractViewFixture(DriverWrapper driver, List<By> viewSelectors)
         {
             _viewSelectors = viewSelectors;
             Driver = driver;

@@ -9,7 +9,7 @@ namespace AppiumTest.Fixtures
         private static readonly string AcceptString = "I know and it is ok for me";
         private static readonly string LogoutString = "Log out and clear data";
 
-        public IntegrityWarningViewFixture(AndroidDriver<AndroidElement> driver) : base(driver, new List<By> { By.Name(AcceptString), By.Name(LogoutString) } )
+        public IntegrityWarningViewFixture(DriverWrapper driver) : base(driver, new List<By> { By.Name(AcceptString), By.Name(LogoutString) } )
         {
         }
 
