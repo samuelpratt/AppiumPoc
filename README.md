@@ -1,6 +1,6 @@
 # AppiumPoc
 ##Overview
-A POC for using Appium to automate testing of the Android version of an App
+A quick and dirty POC for using Appium to automate testing of the Android version of an App
 
 ##You will need
 * Visual Studio 2015 Update 3 or newer
