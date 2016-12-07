@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Appium.Android;
 
 namespace AppiumTest.Fixtures
 {
