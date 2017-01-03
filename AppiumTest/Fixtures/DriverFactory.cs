@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Configuration;
 using OpenQA.Selenium.Remote;
 
 namespace AppiumTest.Fixtures
@@ -26,7 +27,7 @@ namespace AppiumTest.Fixtures
         private DesiredCapabilities GetDesiredCapabilities()
         {
             DesiredCapabilities capabilities = new DesiredCapabilities();
-            capabilities.SetCapability("deviceName", "emulator-5554");
+            capabilities.SetCapability("deviceName", ConfigurationManager.AppSettings["deviceName"]);
             capabilities.SetCapability("appActivity", "com.oyster.MainActivity");
             capabilities.SetCapability("fullReset", "true");
             return capabilities;
