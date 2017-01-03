@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Threading;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Appium.Android;
 
@@ -18,6 +19,7 @@ namespace AppiumTest.Fixtures
             var keyboard = Driver.Keyboard;
             keyboard.SendKeys(email);
             Driver.PressKeyCode(AndroidKeyCode.Enter);
+            Thread.Sleep(1000);
             keyboard.SendKeys(password);
             Driver.PressKeyCode(AndroidKeyCode.Enter);
         }
